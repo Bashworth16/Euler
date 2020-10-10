@@ -1,7 +1,7 @@
 big_number = 600851475143
 factors = []
 
-#find prime factors
+#finds prime factors in the given range.
 for x in range(2, big_number //2):
     if x % 2 == 0:
         continue
