@@ -1,0 +1,13 @@
+1.)"git status" -
+
+changes to be committed - Changes that have been made that are ready to commit
+not staged for commit - changes to files that need to be staged via "git add"
+untracked files - files that are not oin the git repo and need to be added via "git add"
+
+
+2.)"git add".
+
+"git add" followed by files in the not staged for commit and untracked files sections.
+e.g. "git add 003.py 005.py .gitignore 004.py" (can be separated with spaces)
+
+
