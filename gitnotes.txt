@@ -16,3 +16,4 @@ e.g. "git add 003.py 005.py .gitignore 004.py" (can be separated with spaces)
 commits your changes locally on your machine, not github. "-m" attaches a note to your commit.
 
 
+5.)"git push"
