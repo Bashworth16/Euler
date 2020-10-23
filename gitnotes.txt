@@ -10,4 +10,9 @@ untracked files - files that are not oin the git repo and need to be added via "
 "git add" followed by files in the not staged for commit and untracked files sections.
 e.g. "git add 003.py 005.py .gitignore 004.py" (can be separated with spaces)
 
+3.)"git status" to check if your adds were completed properly
+
+4.)"git commit -m 'things and stuffs'"
+commits your changes locally on your machine, not github. "-m" attaches a note to your commit.
+
 
