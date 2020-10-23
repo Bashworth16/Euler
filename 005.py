@@ -16,8 +16,7 @@ COMMON_MULTIPLES = {}
 for x in THE_RANGE:
     result *= x    # To find the largest number divisible by each number in the range.
 
-print(result)
-
+print(f'result = {result}')
 
 for x in THE_RANGE:  # By setting the x and y loops directly inside each other,
     for y in THE_RANGE:  # we only change the denominator (x) if the quotient is no longer evenly divisible by each number in THE_RANGE
@@ -29,6 +28,6 @@ for x in THE_RANGE:  # By setting the x and y loops directly inside each other,
                 break        # break
         if ok and q < result:  # If we reach this point, then quotient is evenly divisible by all number in THE_RANGE and is the 'lesser' common multiple,
             result = q         # Update result with the "Lesser" common multiple.
-            print('Reduced result to ',result)
+            print('Reduced result to',result)
 
 print('LCM =',result)
