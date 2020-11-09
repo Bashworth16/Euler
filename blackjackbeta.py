@@ -107,7 +107,8 @@ def main():
 
         print("")
 
-        # if get_hos is 'y' both player 1 and The House take cards. If 'n' then only The House takes a card. #Beta Version haha
+        # if get_hos is 'y' both player 1 and The House take cards. If 'n' then only The House takes a card. #Beta
+        # Version haha
         if get_hos == 'y':
 
             d = deal(deck)
@@ -124,7 +125,8 @@ def main():
             the_house.append(hd)
             house_total += card_point(hd)
 
-        # Evaluates point for both players to determine a winner and a loop break condition. If a break condition is not met, continue to beginning of "Play Loop".
+        # Evaluates point for both players to determine a winner and a loop break condition. If a break condition is
+        # not met, continue to beginning of "Play Loop".
         if total == 21 and house_total != 21:
             print(f'{hand, total}')
             print('YOU WIN!')
@@ -133,11 +135,11 @@ def main():
             print(f'{house_total, the_house}: House wins!')
             print("")
             break
-        if total > 21 and house_total < 21:
+        if house_total < 21 < total:
             print(total)
             print('Bust! House Wins')
             break
-        if house_total > 21 and total < 21:
+        if house_total > 21 > total:
             print(house_total)
             print('House Busts! Player 1 Wins!')
             print("")
@@ -149,7 +151,8 @@ def main():
         else:
             continue
 
-    # "Leaving Loop": Ask players if they want to play again or not. I am using 'else' instead of "try/except" to get around value errors.
+    # "Leaving Loop": Ask players if they want to play again or not. I am using 'else' instead of "try/except" to get
+    # around value errors.
     leaving = True
     while leaving:
         play_again = input("Would you like to play again? ('y' or 'n'): ")
