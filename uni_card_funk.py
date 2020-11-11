@@ -76,7 +76,13 @@ def uni_rank(x, s):
 
 
 dealt_card = deal(deck)
+
 suit = uni_suit(dealt_card)
 print(f'suit is {suit}')
+
 rank = uni_rank(dealt_card, suit)
 print(rank)
+
+# OUTPUT:   suit is U0001F0C
+#           u"\U0001F0C4"
+#           (This is the correct unicode structure for '🃄' but it only prints the code to console instead of the emoji)
